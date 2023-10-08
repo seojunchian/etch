@@ -42,16 +42,15 @@ body{
     outline: 1px dashed black;
 }
 
-/* COLOR */
-.container > .options > .color{
-    border-radius: 50%;
-    width: 4000px;
+/* INPUT */
+.container > .options > .color > button > input{
+    width: 100px;
     height: 100px;
 }
 
 /* BUTTONS*/
 .container > .options > .buttons{
-
+    width: 200px;
 }
 
 /* RANGE */
@@ -62,7 +61,6 @@ body{
     width: 200px;
     height: 40px;
     margin: 10px 0;
-    outline: 1px dashed black;
 }
 
 /* SQUARE */
