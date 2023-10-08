@@ -1,11 +1,10 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 body{
-    background-color: bisque;
+    background-color: #dfdbd8;
 }
 
 /* TITLE */
@@ -14,38 +13,37 @@ body{
     margin: 50px auto;
     font-size: 75px;
     text-align: center;
-    letter-spacing: -5px;
+    font-family: Courier;
 }
 
 /* CONTENT */
 .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    font-family: monospace;
 }
 
 /* OPTIONS */
 .container > .options{
     display: flex;
     flex-direction: column;
-    padding: 100px 0;
-    outline: 1px dashed black;
+    align-items: center;
+    position: relative;
+    left: 200px;
 }
 
-/* INPUTS */
-.container > .options > .color, 
-.container > .options > .buttons,
-.container > .options > .frame{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    outline: 1px dashed black;
+/* COLOR DİV */
+.container > .options > .color{
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: center;
 }
 
 /* INPUT */
-.container > .options > .color > button > input{
-    width: 100px;
-    height: 100px;
+.container > .options > .color > input{
+    width: 60px;
+    margin-top: 10px;
 }
 
 /* BUTTONS*/
@@ -53,22 +51,53 @@ body{
     width: 200px;
 }
 
-/* RANGE */
-.container > .options > .frame{
-
-}
 .container > .options > .buttons > button{
     width: 200px;
     height: 40px;
     margin: 10px 0;
+    font-size: 15px;
+    background: #dfdbd8;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 1px black solid;
 }
 
+/* BUTTONS HOVER */
+.container > .options > .buttons > button:hover{
+    background-color: #b5c2c7;
+    transition: all .6s;
+}
+
+/* ACTIVE */
+.container > .options > .buttons > .active{
+    background-color: #dbb2a5;
+    color: black;
+
+}
+
+/* ACTIVE HOVER */
+.container > .options > .buttons > .active:hover{
+    background-color: #b5c2c7;
+    color: black;
+}
+
+/* RANGE */
+.container > .options > .frame{
+    text-align: center;
+    margin-top: 25px;
+    font-size: 20px;
+}
+
+.container > .options > .frame > .rangeNumber{
+    margin-bottom: 10px;
+}
 /* SQUARE */
 .container > .square{
-    width: 512px;
-    padding: 250px 0;
-    margin-right: 300px;
-    background-color: aliceblue;
+    width: 500px;
+    height: 500px;
+    position: relative;
+    right: 515px;
+    background-color: #b5c2c7;
 }
 
 /* FOOTER */
