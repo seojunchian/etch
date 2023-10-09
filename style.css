@@ -65,7 +65,8 @@ body{
 /* BUTTONS HOVER */
 .container > .options > .buttons > button:hover{
     background-color: #b5c2c7;
-    transition: all .6s;
+    transition: all .5s;
+    transform: scale(1.075 , 1.075);
 }
 
 /* ACTIVE */
@@ -93,8 +94,8 @@ body{
 }
 /* SQUARE */
 .container > .square{
-    width: 420px;
-    height: 420px;
+    width: 500px;
+    height: 500px;
     position: relative;
     right: 515px;
     background-color: #b5c2c7;

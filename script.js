@@ -10,11 +10,12 @@ const rangeChange = range.addEventListener("click", () => {
 })
 
 function createSquare() {
-    for(let i=0; i<range.value-1; i++){
+    for(let i=1; i<range.value; i++){
         const div = document.createElement("div");
-        div.style.width = 410 / range.value;
-        div.style.height = 410 / range.value;
+        div.style.width = square.width / range.value;
+        div.style.height = square.width / range.value;
         div.style.backgroundColor = "red";
-        square.appendChild(div);
+        div.style.zIndex = "1";
+        document.appendChild(div);
     }
 }
